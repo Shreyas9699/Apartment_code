@@ -48,7 +48,7 @@ School: True
 Output 2:
 D
 
-------------------------- processed input-----------------------------
+------------------------- processed input ------------------------------------
 blocks_names = ['A', 'B', 'C']
 
 amenities = ['Gym', 'Store', 'School'] #list of amenities required
