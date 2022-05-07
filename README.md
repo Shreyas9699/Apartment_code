@@ -49,6 +49,7 @@ Output 2:
 D
 
 ------------------------- processed input ------------------------------------
+
 blocks_names = ['A', 'B', 'C']
 
 amenities = ['Gym', 'Store', 'School'] #list of amenities required
@@ -61,14 +62,17 @@ apart = [
 -----------------------------------------------------------------------------
 Approch:
 first we create a map amenities and blocks, i.e. make a dict with list of block haviong each amenites -> amenitiesAvail
+
 amenitiesAvail:
 {'Gym': [2], 'Store': [1, 2], 'School': [0]}
 
 then for every block, go through every missing amenites and find the closest block that satisfies that missing amenites -> minDist
+
 minDist:
 {0: [2, 1, 0], 1: [1, 0, 1], 2: [0, 0, 2]}
 
 now me take max of each block, since that will be the max distance we will need to travel to meet the missing amenity
+
 maxDist:
 [2, 1, 2]
 
